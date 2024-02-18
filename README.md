@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OuSBNpwM)
-
 # PanoramaEd  (Global Education Helper Platform)
  
 ## Project Overview
@@ -102,7 +100,6 @@ PanoramaEd is a revolutionary web app designed to empower students in their purs
 
 4. Dynamic College Comparison
 - Make confident comparison with our intuitive comparison tools
-- 
  
 5. Student driven insights
 - panoramaEd provides a platform for students to share their admission journey and communicate through posts.
