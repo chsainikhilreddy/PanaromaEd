@@ -42,9 +42,7 @@ PanoramaEd is a revolutionary web app designed to empower students in their purs
   - `id`: Unique identifier for the program.
   - `fee`: Tuition fee for the program.
   - `ranking`: Ranking of the program.
-  - `college`: College offering the program.
-  - `collegeAddress`: College address.
-  - `collegeLogo`: College logo.
+  - `university`: University offering the program.
   - `course`: Associated course for the program.
   - `requirements`: Admission requirements for the program.
 
@@ -70,21 +68,6 @@ PanoramaEd is a revolutionary web app designed to empower students in their purs
   - `name`: Name of the course.
   - `details`: Additional details about the course.
 
-### 9. College
-
-- **Fields:**
-  - `name`: Name of the college.
-  - `address`: College address.
-  - `logo`: College logo.
-  - `admissionLink`: College link for admission.
-  - `ranking`: College ranking.
-  - `state`: state of the College.
-  - `yearEstd`: year of establistion of the college.
-  - `country`: coutry in which college located.
-  - `programs`: programs under the college.
-  - `upcomingEvents`: upcoming events by the college.
-  - `shortlistedStudents`: student ids who shortlisted the college.
-
 ## Features
  
 1. Explore Colleges Worldwide
@@ -100,6 +83,7 @@ PanoramaEd is a revolutionary web app designed to empower students in their purs
 
 4. Dynamic College Comparison
 - Make confident comparison with our intuitive comparison tools
+- 
  
 5. Student driven insights
 - panoramaEd provides a platform for students to share their admission journey and communicate through posts.
@@ -118,18 +102,19 @@ PanoramaEd is a revolutionary web app designed to empower students in their purs
 2. Run `npm start`.
 3. The PanoramaEd App should be accessible at `http://localhost:3000`.
 
-APIs Backend:
+APIs:
 
-Find college by name can be accessed at GET: `http://localhost:3001/colleges/name/${collegeName}`
-to shortlist a college PUT: `http://localhost:3001/colleges?studentId=${student._id}&collegeId=${collegeData?._id}`
-college suggest can be fetched by POST : `http://localhost:3001/programs/suggest`, additionally you have to send student metrics object in body.
-API to GET all posts can be accessed at  `http://localhost:3001/posts`
-API to POST a new Student post can be accessed at `http://localhost:3001/posts/`
-API to DELETE a Student post can be accessed at `http://localhost:3001/posts/${id}`
-API to PATCH (update upVote field ) in the post can be accessed at `http://localhost:3001/posts/${id}/?upvote=${upVote+1}`
-API to get Student Details `http://localhost:3000/studentdetails`
-
-
+Find college by name can be accessed at GET: `http://localhost:3001/colleges/name/${collegeName}`\
+to shortlist a college PUT: `http://localhost:3001/colleges?studentId=${student._id}&collegeId=${collegeData?._id}`\
+college suggest can be fetched by POST : `http://localhost:3001/programs/suggest`, additionally you have to send student metrics object in body.\
+API to GET all posts can be accessed at  `http://localhost:3001/posts`\
+API to POST a new Student post can be accessed at `http://localhost:3001/posts/`\
+API to DELETE a Student post can be accessed at `http://localhost:3001/posts/${id}`\
+API to PATCH (update upVote field ) in the post can be accessed at `http://localhost:3001/posts/${id}/?upvote=${upVote+1}`\
+API to get Student Details `http://localhost:3000/studentdetails`\
+API to GET the Chat of a user `http://localhost:3001/chats/userId={userId}`\
+API to POST a new chat for a user `http://localhost:3001/chats/`, additionally in the request body the student details are set\
+API to PATCH (add a new message) to the chat `http://localhost:3001/chats/{chatId}`, additionally in the request body the message details are set
 
 
 
